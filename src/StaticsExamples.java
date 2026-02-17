@@ -1,5 +1,5 @@
 public class StaticsExamples {
-    public static void main(String a[]){
+    public static void main(String[] args){
         Veg obj = new Veg(); /*obj is just reference var to object created
         it is not the object*/
         obj.name="Carrot";
