@@ -6,7 +6,7 @@ public class StaticsExamples {
         obj.wey=30;
         /*obj.type= "natural"; //works but not prefered;
         obj.show();*/
-        Veg.type= "Hybreed";
+        Veg.type= "Hybree                                 d";
         obj.show();
 
         Veg obj2 = new Veg();
