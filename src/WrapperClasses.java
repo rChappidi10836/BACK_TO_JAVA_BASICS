@@ -8,7 +8,6 @@ public class WrapperClasses {
      * 5. Wrappers are immutable
      * 6. Beware of NullPointerException during unboxing
      * 7. Avoid wrappers in loops (performance)
-     *
      */
 
     /*  Integer x = null;
