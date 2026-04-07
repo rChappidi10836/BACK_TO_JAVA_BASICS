@@ -46,5 +46,16 @@ public class Loop_Rough {
         }
 
         System.out.println("Final touch");
+
+        //test
+        outer:
+        for(int i = 0; i < 3; i++) {
+            inner:
+            for(int j = 0; j < 3; j++) {
+                if(i == 2) break outer;
+                if(j == 1) continue inner;
+                System.out.println(i + " " + j);
+            }
+        }
     }
 }
