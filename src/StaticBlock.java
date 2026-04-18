@@ -10,7 +10,7 @@ public class StaticBlock {
             obj.wey=30;
             obj.show();
 
-            //Vegb obj2 = new Vegb();
+            Vegb obj2 = new Vegb();
 
 
         }
