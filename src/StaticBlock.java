@@ -11,8 +11,6 @@ public class StaticBlock {
             obj.show();
 
             Vegb obj2 = new Vegb();
-            
-            
 
 
 
