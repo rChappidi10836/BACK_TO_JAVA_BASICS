@@ -1,6 +1,6 @@
 package OOPS;
 
-class Animal_Inheritance {
+class Animal_Inheritance_Overriding {
     public String name_type= "universal";
 
     void sound(){
@@ -9,7 +9,7 @@ class Animal_Inheritance {
 }
 
 
-class Dog extends Animal_Inheritance{
+class Dog extends Animal_Inheritance_Overriding {
     public String name_type= "gene specific";
 
     void Sound(){
@@ -25,7 +25,7 @@ class Dog extends Animal_Inheritance{
 
 class Output{
     public static void main(String[] args) {
-        Animal_Inheritance Dog = new Dog();
+        Animal_Inheritance_Overriding Dog = new Dog();
 //        Dog dog = new Animal_Inheritance(); // is not valid
         System.out.println("name_type "+Dog.name_type);
 
