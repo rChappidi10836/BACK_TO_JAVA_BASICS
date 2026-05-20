@@ -23,7 +23,7 @@ class Goldretreiver extends Blog{
 class Main {
     public static void main(String[] args) {
         Blog myDog = new Blog();
-        //myDog.animalSound();
+        myDog.animalSound();
 
         Goldretreiver gold = new Goldretreiver();
         gold.animalSound();
