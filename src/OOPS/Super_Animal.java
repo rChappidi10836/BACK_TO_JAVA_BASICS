@@ -6,7 +6,7 @@ public class Super_Animal {
     }
 }
 
-class Blog extends Super_Animal {
+class Blog extends Super_Animal { // had to replace dog with blog cuz in same package there can't be 2 classes with same name
     public void animalSound() {
         super.animalSound(); // Call the parent method
         System.out.println("The dog says: bow wow");
