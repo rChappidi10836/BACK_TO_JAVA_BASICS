@@ -1,6 +1,6 @@
 package OOPS;
 
-class Animal_Inheritance_Overriding {
+public class Animal_Inheritance_Overriding {
     public String name_type= "universal";
 
     void sound(){
