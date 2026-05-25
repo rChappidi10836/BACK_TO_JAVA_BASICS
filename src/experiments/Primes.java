@@ -29,7 +29,7 @@ public class Primes {
         int count;
         for (int i=2;i<Integer.MAX_VALUE;i++){
             count=0;
-            for (int j=1;j<=(i/2);j++){
+            for (int j=1;j<=(i/2);j++){//use sqrt root of i for more efficiency
                 if(i%j == 0){
                     count++;
                 }

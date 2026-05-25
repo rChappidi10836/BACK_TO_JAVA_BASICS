@@ -4,11 +4,11 @@ package OOPS;
 import java.util.Scanner;
 
 //general template
-public class Capitalist {
+public class This_Capitalist {
     long money;
 
     //same name as class
-    Capitalist(){
+    This_Capitalist(){
         System.out.println("New world order is only money");
     }
 
@@ -27,7 +27,7 @@ public class Capitalist {
     public static void main(String[] args) {
 
         //here man is the real world entity
-        Capitalist man = new Capitalist();// man is the reference variable to object got created.
+        This_Capitalist man = new This_Capitalist();// man is the reference variable to object got created.
         man.earn();
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the current level of earned money");

@@ -11,6 +11,9 @@ class Blog extends Super_Animal { // had to replace dog with blog cuz in same pa
         super.animalSound(); // Call the parent method
         System.out.println("The dog says: bow wow");
     }
+    public void proSkinType(){
+        System.out.println("Has fur");
+    }
 }
 
 class Goldretreiver extends Blog{
@@ -18,6 +21,11 @@ class Goldretreiver extends Blog{
         super.animalSound();//calls the method in Blog cuz it the once extended or inherited
         System.out.println("Rich bow wow shouting");
     }
+    public void skinType(){
+        System.out.println("Skin type of Goldretreiver is ");
+        super.proSkinType();
+    }
+
 }
 
 class Main {
@@ -27,6 +35,7 @@ class Main {
 
         Goldretreiver gold = new Goldretreiver();
         gold.animalSound();
+        gold.skinType();
     }
 }
 
