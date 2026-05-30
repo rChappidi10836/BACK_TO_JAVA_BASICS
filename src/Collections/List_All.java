@@ -16,7 +16,7 @@ public class List_All {
      *
      * size() to get length
      *
-     * clear() remove all elemments
+     * clear() remove all elements
      *
      * sort() sorts
      */
@@ -31,7 +31,7 @@ public class List_All {
          *
          * exchange 2 items in 2 random indexes
          *
-         * /comples
+         * /complex
          *
          * for any value which is divisible by 2, add a number beside using math.random
          *
@@ -44,16 +44,20 @@ public class List_All {
 
         List<Double> ftl = new ArrayList<>(); //ftl -> first time list
 
-        for(int i=0;i<10;i++){
+        //adding 10 items to list
+        for(int i=0;i<5;i++){
             ftl.add(Math.random()*10000);
         }
 
         System.out.println("List after 10 rand elements "+ ftl);
 
+        //removing 4th items
         ftl.remove(3);
 
         System.out.println("List after REMOVING 3rd "+ ftl);
 
+
+        //exchange 2 items in 2 random indexes
         var ind1= (int)(Math.random()*(ftl.size()));var ind2 = (int)(Math.random()*(ftl.size()));
         System.out.println(ind1+ " "+ ind2);
         var t = ftl.get(ind1);
@@ -65,16 +69,48 @@ public class List_All {
 
         System.out.println("after swapping elements at "+t +" and "+t2+" is "+ftl);
 
+        //for any value which is divisible by 2, add a number beside using math.random
         int i=0;
+        String temp;
+        char x;
         while(i< ftl.size()){
-            System.out.println(ftl.get(i)+"runwenew avvu sir"+((ftl.get(i)%2)));
-            if((ftl.get(i)%2)==0 && (ftl.get(i)%2)<0){
-                ftl.add(++i,Math.random());
-                System.out.println("add cheysa nayya i= "+ i);
+            temp=Double.toString(ftl.get(i));
+            x=temp.charAt(temp.length()-1);
+
+            if((x-'0')%2==0){
+                System.out.println( ftl.get(i) + " is even");
+                ftl.add(++i, Math.random());
+            }
+            else{
+                System.out.println( ftl.get(i) + " is odd");
+            }
+//            if((ftl.get(i)%2)==0 && (ftl.get(i)%2)<0){
+//                ftl.add(++i,Math.random());
+//                System.out.println("add cheysa nayya i= "+ i);
+//            }
+            i++;
+        }
+        System.out.println("ftl after 2 divisible question = "+ftl);
+
+        //for any value which is divisible by 5, replace it with 1
+        i=0;
+        while(i< ftl.size()){
+            temp=Double.toString(ftl.get(i));
+            x=temp.charAt(temp.length()-1);
+            if((x == '0') || (x=='5')){
+                ftl.set(i, 1.0);
             }
             i++;
         }
-        System.out.println("ftl after 2 divisble question = "+ftl);
+        System.out.println("ftl after replacing 5 divisible with 1.0 = "+ ftl);
+
+        //replacing each item with its sqrt
+        int k=0;
+        while(k<ftl.size()){
+            ftl.set(k,Math.sqrt(ftl.get(k)));
+            k++;
+        }
+        System.out.println("replacing elements with their sqrts = "+ftl);
 
         /**
          * Start with an empty list
