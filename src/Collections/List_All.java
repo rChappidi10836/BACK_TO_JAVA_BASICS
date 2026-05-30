@@ -21,9 +21,7 @@ public class List_All {
      * sort() sorts
      */
 
-    public static void main(String[] args) {
-
-
+    public void array_List(){
         /**
          * use Math random
          *
@@ -103,8 +101,16 @@ public class List_All {
          *
          * Try to remove an item from an empty list (expect error)
          */
+    }
 
+    public void linked_List(){
 
+    }
+
+    public static void main(String[] args) {
+
+        List_All arr = new List_All();
+        arr.array_List();
 
 
     }
