@@ -39,3 +39,6 @@ TLDR : what I have done is I have written code in both sys 1 and sys 2 in main m
 - I thought it will be hasle to work on but by above cmds it was hashle free and surpisingly no work at all.
 
 </div>
+
+
+Damn 🫨 bro even the commit title and messages are getting filled automatically 🫡 maybe copilot 🤖 is helping, but that is great and will help a lot while trying to commit something and to decide what to do.🎆
