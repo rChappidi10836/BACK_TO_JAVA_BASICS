@@ -112,6 +112,9 @@ public class List_All {
         }
         System.out.println("replacing elements with their sqrts = "+ftl);
 
+        //atlast sorting the array list
+        System.out.println("Sorted ArrayList = "+ftl);
+
         /**
          * Start with an empty list
          *
