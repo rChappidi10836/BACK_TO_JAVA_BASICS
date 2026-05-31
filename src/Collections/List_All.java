@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class List_All {
@@ -112,9 +113,11 @@ public class List_All {
         }
         System.out.println("replacing elements with their sqrts = "+ftl);
 
-        //atlast sorting the array list
-        System.out.println("Sorted ArrayList = "+ftl);
+        //at last sorting the array list
+        Collections.sort(ftl);
+        System.out.println("Sorted ArrayList by Collections = "+ ftl);
 
+        System.out.println("ftl after collections sort "+ftl);
         /**
          * Start with an empty list
          *
