@@ -1,8 +1,7 @@
 package Collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+
 
 public class List_All {
 
@@ -20,6 +19,10 @@ public class List_All {
      * clear() remove all elements
      *
      * sort() sorts
+     *
+     * indexOf()
+     *
+     * lastIndexOf()
      */
 
     public void array_List(){
@@ -146,14 +149,124 @@ public class List_All {
     }
 
     public void linked_List(){
+        /**
+         * What to do:
+         *
+         * Add a song at the beginning of the playlist.
+         *
+         * Add a song at the end of the playlist.
+         *
+         * Add a song in the middle after a specific song.
+         *
+         * Check the first song.
+         *
+         * Check the next song after the current one.
+         *
+         * Remove a song that you don’t want anymore.
+         *
+         * Replace a song with a new one.
+         *
+         * Count how many songs are in the playlist.
+         *
+         * Move from the first song to the last song one by one.
+         *
+         * Why this helps:
+         *
+         * A linked list is good when items are often inserted or removed.
+         *
+         * Each song can point to the next song.
+         *
+         * You can practice how nodes connect to each other.
+         *
+         * Simple learning flow:
+         *
+         * Start with one song.
+         *
+         * Add more songs after it.
+         *
+         * Insert a new song between two songs.
+         *
+         * Remove one song from the middle.
+         *
+         * See how the links change each time.
+         */
+        //LinkedList<String> Playlist = new LinkedList<>();
+        List<String> Playlist = new LinkedList<>(List.of("xoni", "mifi", "wano", "weno", "wibi"));
+        //var Playlist = new LinkedList<String>();
 
+        //using manual way of assigning cuz handling and building code as per the questions is easy with the static data
+        //Playlist=this.generate_Random_Words_List();
+
+        System.out.println(Playlist);
+
+
+        //adding at 1st
+        Playlist.add(0,"R E M O remo remo");
+        System.out.println(Playlist);
+
+        //adding at last
+        Playlist.add(Playlist.size(),"End song");
+        System.out.println(Playlist);
+
+        //remove a song
+        Playlist.remove(1);
+        System.out.println(Playlist);
+
+        //add in middle
+        Playlist.add((Playlist.size()/2),"middle pakkana");
+        System.out.println(Playlist);
+
+        //check 1st song
+        System.out.println(Playlist.get(0));
+
+        //check next song after current one
+        /**
+         * want to impletent it but "threads" cconcept is getting involved so I am taking a leap for it later
+         */
+
+        //remove the song that you don't want anymore
+        Playlist.remove(4);//Playlist.remove("weno"); //both works
+        System.out.println(Playlist);
+
+
+        //Replace a song with a new one.
+        Playlist.set(1,"mini");
+        System.out.println(Playlist);
+
+        //count no of songs in the playlist
+        System.out.println("Total songs = "+Playlist.size());
+
+        //Move from the first song to the last song one by one.
+        System.out.println("Parsing through each song from start to end of the loop");
+        int space = 1;
+        for(String song: Playlist){
+            System.out.println("    ".repeat(space++)+song);
+        }
+
+    }
+
+    public List<String> generate_Random_Words_List(){
+        String vowels = "aeiou";
+        String consonants = "bcfghjklmnpqrstvwxyz";
+        int consize = consonants.length();
+        List<String> req_List = new ArrayList<>();
+        Random k = new Random();
+        //System.out.println(k.nextInt(5));
+        //char trial = vowels.charAt(k.nextInt(5));
+        //System.out.println(trial);
+        for(int i=0;i<5;i++){
+            req_List.add(""+consonants.charAt(k.nextInt(consize))+vowels.charAt(k.nextInt(5))+consonants.charAt(k.nextInt(consize))+vowels.charAt(k.nextInt(5)));
+        }
+
+        return req_List;
     }
 
     public static void main(String[] args) {
 
-        List_All arr = new List_All();
-        arr.array_List();
-
+        List_All li = new List_All();
+        //li.array_List();
+        li.linked_List();
+        //System.out.println(li.generate_Random_Words_List());
 
     }
 }
