@@ -44,7 +44,6 @@ public class List_Sort {
          * }
          */
 
-
         System.out.println("TESTING");
 
         boolean x = sit2.tryAdvance( (n) -> { System.out.println(n); });
