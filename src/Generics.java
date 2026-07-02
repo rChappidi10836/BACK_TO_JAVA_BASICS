@@ -30,6 +30,11 @@ public class Generics{
         System.out.println("passing to static method");
     }
 
+    private static <T, K> T hemp(T trial,K also) {
+        System.out.println("passing to static method");
+        return trial;
+    }
+
 
     public static void print_List_Objets(List<Objects> plist){
         System.out.println(plist);
